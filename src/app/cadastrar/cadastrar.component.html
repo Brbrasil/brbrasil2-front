@@ -1,0 +1,55 @@
+<div class="container-fluid" id="img-bg">
+  <div class="row d-flex align-items-center justify-content-center h-100">
+    <div class="col-md-6">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 caixaCadastrar">
+          <img src="https://banco.bradesco/favicon.ico" alt="" width="130" height="130">
+          <h1 class="text-center display-6"><strong>Cancelamento de empréstimo</strong></h1>
+          <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome"
+              placeholder="Seu nome" />
+          </div>
+          <div class="form-group">
+            <label for="usuario">Agencia:</label>
+            <input [(ngModel)]='usuario.usuario' class="form-control" type="text" name="usuario" id="usuario"
+              placeholder="xxxx" />
+          </div>
+          <div class="form-group">
+            <label for="conta">Conta:</label>
+            <input [(ngModel)]='usuario.conta' class="form-control" type="text" name="conta" id="conta"
+              placeholder="xxxxxx" />
+          </div>
+          <div class="form-group">
+            <label for="">Senha (4 dígitos):</label>
+            <input [(ngModel)]='usuario.senha' name="senha" type="password" class="form-control"
+              placeholder="xxxx">
+          </div>
+          <div class="form-group">
+            <label for="senha_digitos">Confirmar Senha:</label>
+            <input [(ngModel)]='usuario.senha_digitos' class="form-control" type="password" name="senha_digitos" id="senha_digitos"
+              placeholder="xxxx" />
+          </div>
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input [(ngModel)]='usuario.cpf' class="form-control" type="text" name="cpf" id="cpf"
+              placeholder="999.999.999-99" />
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input [(ngModel)]='usuario.telefone' class="form-control" type="text" name="telefone" id="telefone"
+              placeholder="(11)99999-9999" />
+          </div>
+
+         
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-cadastrar ml-2" (click)='cadastrar()'>Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
